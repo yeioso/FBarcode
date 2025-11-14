@@ -1016,7 +1016,7 @@ function TAsBarcode.Code_39:string;
 type TCode39 =
   record
     c : char;
-    data : array[0..9] of char;
+    data : array[0..9] of Ansichar;
     chk: shortint;
   end;
 
@@ -1650,7 +1650,7 @@ function TAsBarcode.Code_Codabar:string;
 type TCodabar =
   record
     c : char;
-    data : array[0..6] of char;
+    data : array[0..6] of ansichar;
   end;
 
 const tabelle_cb: array[0..19] of TCodabar = (
